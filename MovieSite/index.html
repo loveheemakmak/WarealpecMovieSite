@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="จัดทำโดย Warealpec">
+	<meta name="keywords" content="Wareal, Warealpec, ดูหนัง, หนังใหม่, ดูหนังออนไลน์, หนังไทย, หนังฝรั่ง, หนังจีน, หนังญี่ปุ่น, Movie, NewMovie">
+	<meta name="description" content="ดูหนังออนไลน์ หนังใหม่ หนังฝรั่ง หนังจีน หนังญี่ปุ่น หนังไทย | WarealpecMovie">
+	<title>WarealpecMovie</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/javascript" href="index.js">
+</head>
+<body>
+	<div class="bar">
+		<img src="https://cdna.artstation.com/p/assets/images/images/011/966/318/original/david-figueroa-lil-neko.gif" class="logo">
+		<h1>WarealMovie</h1>
+		<input type="text" id="inputsearch" onkeyup="Searchx()" placeholder="ใส่ชื่อหนังสั้นๆก็เจอ | WarealpecMovie">
+	</div>
+	<div  id="movieborder" class="movie">
+		<div id="moviebx" class="moviebox">
+			<a href="www.youtube.com"><img src="https://i.pinimg.com/736x/2a/e6/3f/2ae63f02e6906fd3bc0ea96f3452a26a.jpg" style="width: 220px; height: 295px;"></a>
+			<div id="keys" class="movieboxkey">
+				<a href="#" onclick="#"><br>Pussy Face Cat1 (2032)<br>แมวหน้าหีภาค1 (2032)</a>
+			</div>
+		</div>
+		<div id="moviebx" class="moviebox">
+			<a href="www.youtube.com"><img src="https://i.pinimg.com/736x/2a/e6/3f/2ae63f02e6906fd3bc0ea96f3452a26a.jpg" style="width: 220px; height: 295px;"></a>
+			<div id="keys" class="movieboxkey">
+				<a href="#" onclick="#"><br>Pussy Face Cat2 (2033)<br>แมวหน้าหีภาค2 (2033)</a>
+			</div>
+		</div>
+		<div id="moviebx" class="moviebox">
+			<a href="www.youtube.com"><img src="https://i.pinimg.com/736x/2a/e6/3f/2ae63f02e6906fd3bc0ea96f3452a26a.jpg" style="width: 220px; height: 295px;"></a>
+			<div id="keys" class="movieboxkey">
+				<a href="#" onclick="#"><br>Pussy Face Cat2 (2033)<br>แมวหน้าหีภาค2 (2033)</a>
+			</div>
+		</div>
+		<div id="moviebx" class="moviebox">
+			<a href="www.youtube.com"><img src="https://i.pinimg.com/736x/2a/e6/3f/2ae63f02e6906fd3bc0ea96f3452a26a.jpg" style="width: 220px; height: 295px;"></a>
+			<div id="keys"  class="movieboxkey">
+				<a href="#" onclick="#"><br>Pussy Face Cat3 (2034)<br>แมวหน้าหีภาค3 (2034)</a>
+			</div>
+		</div>
+		<div id="moviebx" class="moviebox">
+			<a href="www.youtube.com"><img src="https://i.pinimg.com/736x/2a/e6/3f/2ae63f02e6906fd3bc0ea96f3452a26a.jpg" style="width: 220px; height: 295px;"></a>
+			<div id="keys"  class="movieboxkey">
+				<a href="#" onclick="#"><br>Pussy Face Cat4 (2035)<br>แมวหน้าหีภาค4 (2035)</a>
+			</div>
+		</div>
+		<div id="moviebx" class="moviebox">
+			<a href="www.youtube.com"><img src="https://i.pinimg.com/736x/2a/e6/3f/2ae63f02e6906fd3bc0ea96f3452a26a.jpg" style="width: 220px; height: 295px;"></a>
+			<div id="keys"  class="movieboxkey">
+				<a href="#" onclick="#"><br>Pussy Face Cat5 (2036)<br>แมวหน้าหีภาค5 (2036)</a>
+			</div>
+		</div>
+		<div id="moviebx" class="moviebox">
+			<a href="www.youtube.com"><img src="https://i.pinimg.com/736x/2a/e6/3f/2ae63f02e6906fd3bc0ea96f3452a26a.jpg" style="width: 220px; height: 295px;"></a>
+			<div id="keys"  class="movieboxkey">
+				<a href="#" onclick="#"><br>Pussy Face Cat6 (2037)<br>แมวหน้าหีภาค6 (2037)</a>
+			</div>
+		</div>
+		<div id="moviebx" class="moviebox">
+			<a href="www.youtube.com"><img src="https://i.pinimg.com/736x/2a/e6/3f/2ae63f02e6906fd3bc0ea96f3452a26a.jpg" style="width: 220px; height: 295px;"></a>
+			<div id="keys" class="movieboxkey">
+				<a href="#" onclick="#"><br>Pussy Face Cat7 (2038)<br>แมวหน้าหีภาค7 (2038)</a>
+			</div>
+		</div>
+		<!-- ระบบค้นหา -->
+<script>
+function Searchx() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("inputsearch");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("movieborder");
+    li = ul.getElementsByTagName("div");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+	</div>
+</body>
+</html>
